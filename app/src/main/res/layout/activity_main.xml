@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/code_scanner"
+        android:layout_width="wrap_content"
+        android:layout_height="450dp"
+        app:autoFocusButtonColor="#FFF"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="#FFF"
+        app:flashButtonVisible="true"
+        app:maskColor="#9F000000">
+
+
+    </com.budiyev.android.codescanner.CodeScannerView>
+
+    <TextView
+        android:id="@+id/code_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/code_scanner"
+        android:text="Scan Something..."
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+</RelativeLayout>
